@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Captcha Verification</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/3518/3518787.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #0f0f0f; color: #00ff00;">
+  <div class="container" style="border: 2px solid #00ff00; box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); padding: 40px; border-radius: 15px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <div class="wrapper" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+      <canvas id="canvas" width="200" height="70" style="border: 2px solid #00ff00; border-radius: 8px;"></canvas>
+      <button id="reload-button" style="background-color: #ff00ff; color: #00ff00; border: none; border-radius: 10px; padding: 10px 20px; cursor: pointer;">
+        <i class="fas fa-arrow-rotate-right" style="font-size: 24px;"></i>
+      </button>
+    </div>
+    <input type="text" id="user-input" placeholder="Enter the text in the image" style="font-family: 'Roboto Mono', monospace; font-size: 16px; width: calc(100% - 20px); padding: 10px; border: 2px solid #00ff00; border-radius: 10px; margin-bottom: 20px;">
+    <button id="submit-button" style="background-color: #ff00ff; color: #00ff00; border: none; border-radius: 10px; padding: 12px 24px; cursor: pointer;">
+      Next
+    </button>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
